@@ -1,5 +1,8 @@
-// Happy Face Static
-size(500 ,500);
+// Global Variables
+
+void setup() {
+  size(500,500);
+
 int leftEyeX = width*1/4;
 int leftEyeY = height*1/4;
 int rightEyeX = width*3/4;
@@ -15,19 +18,21 @@ int mouthLeftX = width*1/4;
 int mouthLeftY = height*3/4;
 int mouthRigthX = width*3/4;
 int mouthRightY = mouthLeftY;
+int measleDiameter = width*1/50; //Value = 10
+}
+  
+void draw(){
+  ellipse()
+  
+  
+}
 
 
-// Face - Circle
-ellipse(width*1/2, height*1/2, width, height);
+ellipse(width*1/2, height*1/2, width, height);int leftEyeX = width*1/4; // Face - Circle
 
-// Eyes - Small circles, ovals
 ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
 ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
-
-// Nose - line
 triangle(nose1X, nose1Y, nose2X, nose2Y, nose3X, nose3Y);
-
-// Mouth, line ("curved line")
 line(mouthLeftX, mouthLeftY, mouthRigthX, mouthRightY);
 
 //Optional: ears, eyebrows
